@@ -1,4 +1,5 @@
 # front-end-proyecto
+DanaeGonzalez - voy a trabajar con el header de home
 
 
 VanesaSebastian - Yo trabajare con las Cards de Vacantes
