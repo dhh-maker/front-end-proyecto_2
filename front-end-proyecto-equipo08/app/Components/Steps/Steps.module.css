@@ -1,0 +1,134 @@
+.steps {
+  padding: 3.5rem 1.5rem;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff8e1;
+  color: #b45309;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 5px 14px;
+  border-radius: 999px;
+  border: 1px solid #fde68a;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #1441a2;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #141619;
+  margin-bottom: 2.5rem;
+}
+
+.cards {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ── Card ── */
+.card {
+  width: 210px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e3b10c;
+  background: #f1f1f5;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  opacity: 0;
+  animation: fadeUp 0.5s ease forwards;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Imagen ── */
+.imgWrap {
+  position: relative;
+  height: 140px;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.imgPlaceholder {
+  width: 100%;
+  height: 100%;
+  background: #c3a351;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconoGrande {
+  font-size: 3rem;
+}
+
+/* ── Badge número ── */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+/* ── Ícono esquina ── */
+.iconoBadge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+/* ── Texto ── */
+.body {
+  padding: 1rem;
+}
+
+.pasoTitulo {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 0.4rem;
+}
+
+.pasoDesc {
+  font-size: 0.78rem;
+  color: #6b7280;
+  line-height: 1.5;
+  margin: 0;
+}
