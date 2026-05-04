@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
   
-      {/* Aquí va el nombre de la página */}
+      {/*aqui va el nombre de la pag*/}
       <div className={styles.left}>
         <h1>
           <span className={styles.textEnlace}>ENLACE</span>
@@ -13,7 +13,7 @@ export default function Header() {
         <p>Servicio social - FES Acatlán</p>
       </div>
 
-      {/*cada botom*/}
+      {/*cada botom del headeer*/}
       <nav className={styles.center}>
         <button>Inicio</button>
         <button>Vacantes</button>
