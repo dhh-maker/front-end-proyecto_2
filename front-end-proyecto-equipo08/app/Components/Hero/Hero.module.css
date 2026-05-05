@@ -1,6 +1,6 @@
 /* ========== HERO SECTION ========== */
 .hero {
-    height: 100vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,9 +37,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: 
-        radial-gradient(circle at 20% 80%, rgba(12, 175, 250, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(43, 117, 255, 0.1) 0%, transparent 50%);
     pointer-events: none;
 }
 
@@ -47,9 +44,9 @@
     display: inline-flex;          
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;  /* Cambia de 5rem a 0.5rem */
-    background-color: rgba(255, 255, 255, 0.1); 
-    color: var(--color-text-secondary, #e0e0e0); 
+    gap: 0.1rem;  /* Cambia de 5rem a 0.5rem */
+    background-color: rgba(132, 126, 126, 0.307); 
+    color: var(--color-text-secondary, #000000); 
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50px;        
     padding: 0.4rem 1.25rem;      
@@ -63,7 +60,7 @@
 
 .hero__title {
     font-size: 4rem;
-    font-weight: 800;
+    font-weight: 900;
     color:#f7ca36;
     line-height: 3.5;
     margin-bottom: var(--spacing-md);
@@ -86,7 +83,7 @@
 .hero__description {
     font-size: 1.3rem;
     font-weight: 500;
-    color: var(--color-text-secondary);
+    color: #000000;
     margin-bottom: var(--spacing-xl);
     text-align: center;
     max-width: 800px;
