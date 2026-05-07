@@ -22,7 +22,11 @@ export default function Header() {
           <button>Inicio
           </button>
         </Link>
-        <button>Vacantes</button>
+
+        <Link href='/Vacantes' passHref >
+          <button>Vacantes
+          </button>
+        </Link>
 
         <Link href='/Postulaciones' passHref >
           <button>Postulaciones
