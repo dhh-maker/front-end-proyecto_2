@@ -1,6 +1,6 @@
 /* ========== HERO SECTION ========== */
 .hero {
-    height: 70vh;
+    height: 55vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,12 +20,12 @@
 
 .hero__container {
     display: grid;
-    gap: var(--spacing-3xl);
+    gap: 0.5rem;
     align-items: center;
     justify-items: center;
     position: relative;
     z-index: 1;
-    max-width: 1200px;
+    max-width: 1000px;
     width: 90%;
     margin: 0 auto;
     transform: translateY(0);
@@ -44,26 +44,26 @@
     display: inline-flex;          
     align-items: center;
     justify-content: center;
-    gap: 0.1rem;  /* Cambia de 5rem a 0.5rem */
+    gap: 0.02rem;
     background-color: rgba(132, 126, 126, 0.307); 
     color: var(--color-text-secondary, #000000); 
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50px;        
-    padding: 0.4rem 1.25rem;      
+    padding: 0.1rem 1rem;      
     font-size: 0.9rem;          
     font-weight: 500;            
     letter-spacing: 0.5px;         
     backdrop-filter: blur(4px);    
     transition: all 0.3s ease;     
-    margin: 8 auto; 
+    margin: 0;
 }
 
 .hero__title {
-    font-size: 4rem;
-    font-weight: 900;
+    font-size: 3.5rem;
+    font-weight: 800;
     color:#f7ca36;
-    line-height: 3.5;
-    margin-bottom: var(--spacing-md);
+    line-height: 2;
+    margin-bottom: 0.01rem;
 }
 
 .hero__subtitle {
