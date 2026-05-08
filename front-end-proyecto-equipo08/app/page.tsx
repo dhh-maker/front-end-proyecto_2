@@ -9,10 +9,10 @@ export default function Home() {
     <>
       <Carousel/>
       <Hero />
-      <CardVacante />
       <main>
         <Steps />
       </main>
+      <CardVacante />
     </>
   );
 }
