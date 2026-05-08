@@ -34,27 +34,52 @@
 
 .cards {
   display: flex;
-  gap: 16px;
+  gap: 24px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 /* ── Card ── */
 .card {
-  width: 210px;
-  border-radius: 16px;
+  width: 300px;
+  border-radius: 20px;
   overflow: hidden;
-  border: 1px solid #e3b10c;
-  background: #f1f1f5;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(241, 245, 249, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   text-align: left;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
   opacity: 0;
   animation: fadeUp 0.5s ease forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  background: rgba(30, 58, 95, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-color: rgba(96, 165, 250, 0.4);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 30px 60px rgba(30, 58, 95, 0.4);
+}
+
+/* Línea azul abajo */
+.card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: #60a5fa;
+  transition: width 0.3s ease;
+  border-radius: 0 0 20px 20px;
+}
+
+.card:hover::after {
+  width: 100%;
 }
 
 @keyframes fadeUp {
@@ -65,7 +90,7 @@
 /* ── Imagen ── */
 .imgWrap {
   position: relative;
-  height: 140px;
+  height: 180px;
   overflow: hidden;
 }
 
@@ -74,6 +99,12 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card:hover .img {
+  transform: scale(1.07);
+  filter: brightness(0.5);
 }
 
 .imgPlaceholder {
@@ -98,6 +129,7 @@
   font-weight: 700;
   padding: 3px 9px;
   border-radius: 999px;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* ── Ícono esquina ── */
@@ -112,23 +144,57 @@
   align-items: center;
   justify-content: center;
   font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .iconoBadge {
+  transform: scale(1.2);
 }
 
 /* ── Texto ── */
 .body {
-  padding: 1rem;
+  padding: 1.2rem;
 }
 
 .pasoTitulo {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #111827;
   margin: 0 0 0.4rem;
+  transition: color 0.3s ease;
+}
+
+.card:hover .pasoTitulo {
+  color: #ffffff;
 }
 
 .pasoDesc {
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   color: #6b7280;
   line-height: 1.5;
-  margin: 0;
+  margin: 0 0 1rem;
+  transition: color 0.3s ease;
+}
+
+.card:hover .pasoDesc {
+  color: #cbd5e1;
+}
+
+/* ── Botón hover ── */
+.btn {
+  display: inline-block;
+  padding: 6px 16px;
+  background: #2563eb;
+  color: white;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border-radius: 999px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover .btn {
+  opacity: 1;
+  transform: translateY(0);
 }

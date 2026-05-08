@@ -1,4 +1,5 @@
 import styles from "./Steps.module.css";
+import Link from "next/link";
 
 const pasos = [
   {
@@ -13,6 +14,7 @@ const pasos = [
     badgeColor: "#78350f",
     imagen:
       "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&q=70",
+    link: "/Vacantes",
   },
   {
     numero: "02",
@@ -26,6 +28,7 @@ const pasos = [
     badgeColor: "#78350f",
     imagen:
       "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=70",
+    link: "/Vacantes",
   },
   {
     numero: "03",
@@ -39,6 +42,7 @@ const pasos = [
     badgeColor: "#1e3a5f",
     imagen:
       "https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&q=70",
+    link: "/Vacantes",
   },
   {
     numero: "04",
@@ -50,12 +54,11 @@ const pasos = [
     iconoColor: "#7c3aed",
     badgeBg: "#a78bfa",
     badgeColor: "#3b0764",
-    
-    imagen: 
-    '/imagenes/nochains.png', 
+    imagen: "/imagenes/nochains.png",
+    link: "/Vacantes",
   },
 ];
- {/* "https://images.unsplash.com/photo-1533228876829-65c94e7b5025?w=400&q=70"*/}
+
 export default function Steps() {
   return (
     <section className={styles.steps}>
@@ -76,10 +79,10 @@ export default function Steps() {
             <div className={styles.imgWrap}>
               {paso.imagen ? (
                 <img
-  src={paso.imagen}
-  alt={`Imagen del paso ${paso.numero}: ${paso.titulo}`}
-  className={styles.img}
-/>
+                  src={paso.imagen}
+                  alt={`Imagen del paso ${paso.numero}: ${paso.titulo}`}
+                  className={styles.img}
+                />
               ) : (
                 <div className={styles.imgPlaceholder}>
                   <span className={styles.iconoGrande}>{paso.icono}</span>
@@ -103,6 +106,9 @@ export default function Steps() {
             <div className={styles.body}>
               <p className={styles.pasoTitulo}>{paso.titulo}</p>
               <p className={styles.pasoDesc}>{paso.descripcion}</p>
+              <Link href={paso.link} className={styles.btn}>
+                Ver más →
+              </Link>
             </div>
           </div>
         ))}
