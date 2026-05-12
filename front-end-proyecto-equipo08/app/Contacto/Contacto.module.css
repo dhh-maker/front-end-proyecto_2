@@ -3,19 +3,19 @@
 
 /*exlusivo d pagina*/
 .page {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 48px 24px 80px;
+  max-width: 1080px; /*ancho*/
+  margin: 0 auto; /*centrar*/
+  padding: 48px 24px 80px; /*espaciado*/
   font-family: 'DM Sans', sans-serif;
 }
 
 .pageHeader { margin-bottom: 36px; }
 
 .pageTitle {
-  font-family: 'Outfit', sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #1a3a7c;
+  font-family: 'Outfit', sans-serif; /*fuente*/
+  font-size: 2rem; /*tamaño*/
+  font-weight: 700; /*negritas*/
+  color: #1a3a7c; 
   margin: 0 0 6px;
 }
 
@@ -27,9 +27,9 @@
 
 /*lo divido en dos parte, izq, y der*/
 .layout {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 36px;
+  display: grid;  
+  grid-template-columns: 1fr 1.1fr; /*dos*/
+  gap: 36px; /*espacio entre columnas*/
   align-items: start;
 }
 
@@ -41,17 +41,17 @@
 }
 
 .infoCard {
-  display: flex;
-  gap: 14px;
+  display: flex; /*icono*/
+  gap: 14px; /*espacio entre el icono*/
   align-items: flex-start;
   background: #fff;
   border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 16px 18px;
+  border-radius: 12px; /*esquinas redondeadas*/
+  padding: 16px 18px; 
   box-shadow: 0 1px 6px rgba(26, 58, 124, 0.06);
   transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
-
+/*sombra cuando pasas el mouse*/
 .infoCard:hover {
   box-shadow: 0 4px 16px rgba(26, 58, 124, 0.11);
   border-color: #c7d7f5;
@@ -95,7 +95,6 @@
 }
 .infoCardLink:hover { color: #1a3a7c; text-decoration: underline; }
 
-/*es necesario lo del maps AJUSTAA EL MAPS*/
 .mapWrapper {
   border-radius: 12px;
   overflow: hidden;
@@ -230,7 +229,7 @@
   pointer-events: none;
   transition: color 0.15s;
 }
-.cuentaOk { color: #16a34a; font-weight: 600; }
+.cuentaOk { color: #16a34a; font-weight: 600; } /*cuando complet los 9 es pone en verdecito*/
 
 /*capacidad de caracteres*/
 .charCount {

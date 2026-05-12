@@ -39,7 +39,7 @@ const MAPS_EMBED =
 function validar(data: FormContacto): FormErrors {
   const e: FormErrors = {};
 
-  //nombre
+//nombre
   const palabras = data.nombre.trim().split(/\s+/);
   if (!data.nombre.trim()) {
     e.nombre = 'El nombre completo es obligatorio.';

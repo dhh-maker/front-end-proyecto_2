@@ -49,7 +49,7 @@
   gap: 20px;
 }
 
-/* ── Card ── */
+/*card*/
 .card {
   background: #fff;
   border: 1px solid #e5e7eb;
@@ -71,7 +71,7 @@
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Stagger */
+/*¿q es stageer?*/
 .list .card:nth-child(1) { animation-delay: 0.05s; }
 .list .card:nth-child(2) { animation-delay: 0.10s; }
 .list .card:nth-child(3) { animation-delay: 0.15s; }
@@ -107,7 +107,7 @@
   gap: 5px;
 }
 
-/* ── Meta ── */
+/*¿meta?*/
 .cardMeta {
   display: flex;
   align-items: center;
@@ -136,7 +136,7 @@
 
 .iconSmall { font-size: 13px; line-height: 1; }
 
-/* ── Footer card ── */
+/*footer card?*/
 .cardFooter {
   display: flex;
   justify-content: flex-end;
@@ -172,7 +172,7 @@
 }
 .btnVerVacante:hover .btnArrow { transform: translateX(3px); }
 
-/* ── Badges de estado ── */
+/*q es badge?*/
 .badge {
   display: inline-flex;
   align-items: center;
@@ -224,7 +224,7 @@
   border: 1px solid #fecaca;
 }
 
-/* ── Estado vacío ── */
+/*vacio*/
 .empty {
   text-align: center;
   padding: 72px 24px;
@@ -237,7 +237,7 @@
 .emptyTitle { font-family: 'Outfit', sans-serif; font-size: 1.15rem; font-weight: 700; color: #374151; margin: 0 0 8px; }
 .emptySub   { font-size: 13.5px; color: #9ca3af; margin: 0; }
 
-/* ── Responsive ── */
+/*responsive?*/
 @media (max-width: 600px) {
   .page      { padding: 32px 16px 60px; }
   .pageTitle { font-size: 1.6rem; }

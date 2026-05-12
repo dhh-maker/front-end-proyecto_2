@@ -1,10 +1,5 @@
-/* =============================================
-   Header — EnlaceMAC
-   ============================================= */
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Outfit:wght@700;800&display=swap');
 
-/* ----- Contenedor principal ----- */
 .header {
   display: flex;
   justify-content: space-between;
@@ -19,7 +14,7 @@
   z-index: 100;
   box-shadow: 0 4px 24px rgba(32, 72, 142, 0.35);
 
-  /* línea animada inferior */
+  /*aqui es el detashito del color inferior al pasar el mouse*/
   --line-gradient: linear-gradient(90deg, #39d7e8, #cab217, #39d7e8);
 }
 
@@ -40,7 +35,7 @@
   100% { background-position: -200% 0; }
 }
 
-/* ----- Marca (izquierda) ----- */
+/*el detashito lado izq*/
 .left {
   display: flex;
   flex-direction: column;
@@ -70,7 +65,7 @@
   letter-spacing: 0.3px;
 }
 
-/* ----- Navegación (centro) ----- */
+/*centro*/
 .center {
   display: flex;
   align-items: center;
@@ -94,7 +89,7 @@
   white-space: nowrap;
 }
 
-/* línea de acento inferior */
+/*línea*/
 .navBtn::after {
   content: '';
   position: absolute;
@@ -119,7 +114,7 @@
   opacity: 1;
 }
 
-/* estado activo */
+/*activo*/
 .navBtn.active {
   color: #fff;
   background: rgba(57, 215, 232, 0.1);
@@ -131,7 +126,7 @@
   opacity: 1;
 }
 
-/* ----- Login (derecha) ----- */
+/*login der*/
 .right {
   display: flex;
   align-items: center;
@@ -165,7 +160,7 @@
   transform: translateY(0);
 }
 
-/* ----- Responsive ----- */
+/*responsive*/
 @media (max-width: 900px) {
   .header {
     flex-wrap: wrap;

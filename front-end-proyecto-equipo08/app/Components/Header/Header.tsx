@@ -18,7 +18,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
 
-      {/* Nombre de la plataforma */}
+      {/*parte de ENLACE MAC*/}
       <div className={styles.left}>
         <h1 className={styles.brandRow}>
           <span className={styles.textEnlace}>ENLACE</span>
@@ -27,7 +27,7 @@ export default function Header() {
         <p className={styles.brandSub}>Servicio social · FES Acatlán</p>
       </div>
 
-      {/* Navegación central */}
+      {/*botoncitos de enmedio*/}
       <nav className={styles.center}>
         {navLinks.map(({ href, label }) => (
           <Link
@@ -40,7 +40,7 @@ export default function Header() {
   ))}
 </nav>
 
-      {/* Botón de sesión */}
+      {/*botom iniciar sesion*/}
       <div className={styles.right}>
         <Link href='/Login' passHref legacyBehavior>
           <a className={styles.login}>Iniciar sesión</a>
