@@ -1,12 +1,7 @@
-/* =============================================
-   Footer — EnlaceMAC
-   ============================================= */
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Outfit:wght@700;800&display=swap');
 
-/* ----- Contenedor raíz ----- */
 .footer {
-  background: #0f1625;
+  background: #0f1a33;
   color: #e2e8f0;
   padding: 52px 32px 0;
   margin-top: 4rem;
@@ -15,7 +10,6 @@
   font-family: 'DM Sans', sans-serif;
 }
 
-/* franja de color superior */
 .footer::before {
   content: '';
   position: absolute;
@@ -23,10 +17,9 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #1a3a7c, #39d7e8, #cab217, #39d7e8, #1a3a7c);
+  background: linear-gradient(90deg, #1a2d5a, #8fa8d4, #c8d8f0, #8fa8d4, #1a2d5a);
 }
 
-/* destello central decorativo */
 .glow {
   position: absolute;
   top: -60px;
@@ -34,11 +27,10 @@
   transform: translateX(-50%);
   width: 700px;
   height: 220px;
-  background: radial-gradient(ellipse, rgba(57, 215, 232, 0.055) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(200, 216, 240, 0.04) 0%, transparent 70%);
   pointer-events: none;
 }
 
-/* ----- Grid principal ----- */
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -50,7 +42,6 @@
   z-index: 1;
 }
 
-/* ----- Marca ----- */
 .brand { max-width: 280px; }
 
 .brandTitle {
@@ -61,8 +52,8 @@
   display: flex;
 }
 
-.fe { color: #39d7e8; }
-.fm { color: #cab217; }
+.fe { color: #c8d8f0; }
+.fm { color: #ffffff; }
 
 .institution {
   font-size: 10.5px;
@@ -86,7 +77,6 @@
   line-height: 1.7;
 }
 
-/* ----- Títulos de sección ----- */
 .sectionTitle {
   font-size: 10px;
   font-weight: 600;
@@ -98,7 +88,6 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-/* ----- Listas de enlaces ----- */
 .linkList {
   list-style: none;
   padding: 0;
@@ -119,13 +108,12 @@
   padding-left: 0;
 }
 
-/* guión animado al hover */
 .linkList a::before {
   content: '';
   display: inline-block;
   width: 0;
   height: 1px;
-  background: #39d7e8;
+  background: #c8d8f0;
   margin-right: 0;
   transition: width 0.22s ease, margin-right 0.22s ease;
   flex-shrink: 0;
@@ -140,7 +128,6 @@
   margin-right: 6px;
 }
 
-/* ----- Contacto ----- */
 .contactItem {
   display: flex;
   align-items: flex-start;
@@ -151,8 +138,8 @@
 .contactIcon {
   width: 30px;
   height: 30px;
-  background: rgba(57, 215, 232, 0.07);
-  border: 1px solid rgba(57, 215, 232, 0.16);
+  background: rgba(200, 216, 240, 0.07);
+  border: 1px solid rgba(200, 216, 240, 0.18);
   border-radius: 7px;
   display: flex;
   align-items: center;
@@ -170,17 +157,16 @@
 }
 
 .contactText a {
-  color: rgba(57, 215, 232, 0.65);
+  color: rgba(200, 216, 240, 0.7);
   text-decoration: none;
   transition: color 0.2s ease;
   word-break: break-all;
 }
 
 .contactText a:hover {
-  color: #39d7e8;
+  color: #c8d8f0;
 }
 
-/* ----- Barra de copyright ----- */
 .bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.055);
   padding: 16px 0;
@@ -204,7 +190,6 @@
   letter-spacing: 0.4px;
 }
 
-/* ----- Responsive ----- */
 @media (max-width: 1024px) {
   .container {
     grid-template-columns: 1fr 1fr;
