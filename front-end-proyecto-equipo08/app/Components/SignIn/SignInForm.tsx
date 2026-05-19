@@ -1,18 +1,14 @@
 'use client' 
-import Form from 'next/form'
 import styles from './SignInForm.module.css'
 import { useSearchParams } from 'next/navigation'
 import { login } from '../../Login/actions'
 
 
 
-interface SignInFormProps {
-  action: (formData: FormData) => Promise<void>
-}
-
-export default function SignInForm({ action }: SignInFormProps) {
+export default function SignInForm() { // Ya no necesitamos SignInFormProps
   const searchParams = useSearchParams()
   const error = searchParams.get('error')
+
 
   return (
     <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
@@ -37,7 +33,7 @@ export default function SignInForm({ action }: SignInFormProps) {
         )}
 
         {/* action apunta directo a la Server Action */}
-        <form action={action} className="space-y-6">
+        <form action={async (formData) => {await login(formData);}}className="space-y-6">
           <div>
             <label htmlFor="email" className="block text-sm/6 font-medium text-gray-900">
               Correo electrónico
